@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>portfolio</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:16px;
+}
+.mobile-menu {
+  display:block;
+  width:100%;
+background: #8aa8bd/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+line-height: 1.6em;
+font-weight: 400;
+width:100%;
+text-align:center;
+  position: relative;
+  margin:0 auto;
+}
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+  list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  position: absolute;
+  background: #8aa8bd;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+  display:inline-block;
+  /*float: left;
+  margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+  display:block;
+  min-width:140px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-transform:uppercase;
+  background: #8aa8bd;
+  text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;  
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+  color: #4db3ff;
+  background-color:#ccddee;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+  color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #8aa8bd;
+  text-align: center;
+  padding: 10px 15px;
+  display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 25px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 800px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+  /*Make dropdown links appear inline*/
+  .mobile-menu ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  .mobile-menu li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  .mobile-menu ul li, .mobile-menu li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .mobile-menu .show-menu {
+    display:block;
+  }
+}
+.image{
+  border-radius: 20px;
+    display: block;
+  width: 10%; 
+  display:inline;
+  clear: both;
+  }
+
+  
+  /*photo*/
+  html, body{
+  height: 100%;
+}
+body { 
+      background-image: url(https://c4.wallpaperflare.com/wallpaper/288/295/817/smartphone-iphone-macbook-wallpaper-preview.jpg) ;
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      background-color: #999;
+  
+}
+
+div, body{
+  margin: 0;
+  padding: 0;
+  font-family: exo, sans-serif;
+  
+}
+.wrapper {
+  height: 100%; 
+  width: 100%; 
+}
+
+.message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; 
+  height:45%;
+  bottom: 0; 
+  display: block;
+  position: absolute;
+  
+  color: #fff;
+  padding: 0.5em;
+}
+/*aligne*/
+.align {
+  display: flex;
+  justify-content: space-between;
+}
+/*texte*/
+ .text{
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#339966;
+  margin-top:20px;
+ }
+ .text1{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:250px;
+ margin-top:-40px;
+ }
+  .text2{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#339966;
+ margin-left:570px;
+ margin-top:-60px;
+ }
+.text3{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:900px;
+ margin-top:-60px;
+ }
+ .text4{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:1200px;
+ margin-top:-60px;
+ }
+  .text5{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:400px;
+ margin-top:-64px;
+ }
+  .text6{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#339966;
+ margin-left:770px;
+ margin-top:-64px;
+ }
+ .text7{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:1200px;
+ margin-top:-64px;
+ }
+  .text8{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#990033;
+ margin-left:570px;
+ margin-top:-40px;
+ }
+  .text9{
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:#339966;
+ margin-left:1200px;
+ margin-top:-55px;
+ }
+
+ /*wrapper1*/
+ .wrapper1 {
+  height: 100%; 
+  width: 100%; 
+}
+
+.message1 {
+   width: 100%; 
+  margin-top:100px; 
+  position: absolute;  
+  color: #fff; 
+}
+.message2 {
+   width: 100%; 
+  margin-top:-160px; 
+  position: absolute;  
+  color: #fff; 
+}
+</style>
+</head>
+<body>
+ <nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+  <input type="checkbox" id="show-menu">
+    <ul id="menu">
+	<li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li>      <a href="portfolioIndex.html">Portfolio</a>   </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+<div class="wrapper">
+  <div class="message">  
+    <h1>A deferent language</h1><br/> <br/><br/>
+<div class="align"> 
+ <img src='https://github.com/eyabenltaief/portfolio.github.io/blob/main/java.png' class="image">
+   <img src="C:\Users\eyabe\OneDrive\Documents\portfolio\JavaScript.png" class="image">
+   <img src="C:\Users\eyabe\OneDrive\Documents\portfolio\php7.jpg" class="image">
+   <img src="C:\Users\eyabe\OneDrive\Documents\portfolio\python.jpg" class="image">
+   <img src="C:\Users\eyabe\OneDrive\Documents\portfolio\c++.png" class="image">
+   </div> 
+   <p class="text">Java is an object oriented<br/>
+    programming language</p>
+	<p class="text1">JavaScript is a scripting programming <br/>
+	language primarily used in <br/> 
+	interactive web pages</p>
+	<p class="text2">PHP is a free programming language,<br/> 
+	mainly used to produce dynamic<br/> 
+	 web pages through an HTTP server</p>
+	 <p class="text3">Python promotes structured, <br/> 
+	 functional and object-oriented<br/> 
+	  imperative programming</p>
+	   <p class="text4">C ++ is a compiled programming<br/> 
+	    language allowing programming</p>
+  </div> 
+</div>
+<div class="wrapper1">
+  <div class="message1">  
+    <h1>A deferent Logiciel</h1><br/> <br/><br/>
+	<div class="align"> 
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\photoShop.png" class="image">
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\eclipse ide.jpg" class="image">
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\visualStudio.jpg" class="image">
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\nodejs.png" class="image">
+	</div> 
+	<p class="text"> Photoshop is computer-assisted<br/>
+	 retouching, processing and <br/>
+	 drawing software </p>
+	 	<p class="text5"> Eclipse is a project, <br/>
+		broken down and organized<br/>
+		 into a set of software<br/>
+		  development sub-projects </p>
+		  <p class="text6"> An extensible code<br/> 
+		  editor developed by Microsoft<br/>
+		   for Windows, Linux and macOS</p>
+		   <p class="text7"> Node.js is a free software platform<br/> 
+		    in JavaScript, oriented towards <br/> 
+			network applications</p>
+  </div> 
+</div>
+<div class="wrapper1">
+  <div class="message2">  
+    <h1>A deferent Application</h1><br/> <br/><br/>
+	<div class="align"> 
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\netbeans.png" class="image">
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\androidstudio.png" class="image">
+	<img src="C:\Users\eyabe\OneDrive\Documents\portfolio\phpmyadmin.png" class="image">
+	</div> 
+		<p class="text"> NetBeans is an integrated <br/> 
+		development environment </p>
+		<p class="text8"> Android Studio is a development <br/> 
+		environment for developing <br/> 
+		Android mobile applications</p>
+		 <p class="text9">phpMyAdmin is a <br/>
+		 management web application<br/>
+		  for MySQL and MariaDB database <br/>
+		  management systems</p>
+  </div> 
+</div>
+</body>
+</html>
